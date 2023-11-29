@@ -1,0 +1,14 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {},
+  "scripts": {
+    "start": "http-server . -p 8080 -a localhost"
+  },
+  "dependencies": {
+    "http-server": "^14.1.1",
+    "socket.io-client": "^4.7.2"
+  }
+}

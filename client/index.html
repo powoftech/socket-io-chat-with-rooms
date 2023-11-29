@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<title>chat</title>
+	</head>
+
+	<body>
+		<div class="box">
+			<div class="row header"></div>
+
+			<div class="row content">
+				<ul id="messages"></ul>
+			</div>
+
+			<div class="row footer">
+				<form id="message-form" action="">
+					<input id="message" type="text" placeholder="message" class="input" required />
+					<button>send</button>
+				</form>
+
+				<form id="room-form" action="">
+					<input id="room" type="text" placeholder="room" class="input" required />
+					<button>join</button>
+				</form>
+			</div>
+		</div>
+
+		<script
+			src="https://cdn.socket.io/4.7.2/socket.io.min.js"
+			integrity="sha384-mZLF4UVrpi/QTWPA7BjNPEnkIfRFn4ZEO3Qt/HFklTJBj/gBOV8G3HcKn4NfQblz"
+			crossorigin="anonymous"
+		></script>
+		<script defer src="script.js" type="module"></script>
+	</body>
+</html>
